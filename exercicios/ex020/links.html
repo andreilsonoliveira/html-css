@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+        # = ID
+        . = CLASS
+        : = PSEUDO-CLASS
+        :: = PSEUDO-ELEMENT
+        > =  CLILDREN
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: rgb(241, 10, 10);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(151, 41, 41);
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        a::before{
+            content: '⇨';
+        }
+
+        a::after {
+            content: '⇦';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank">Repositorio</a></li>
+        <li><a href="https://www.canva.com/pt_br/login/?redirect=%2Fdesign%2FDAE1k7JohB8%2FfRlwCID3Q73bIb1JIkhF_A%2Fedit">canal do youtube</a></li>
+        <li><a href="https://fdevendas.com.br/acesso/login">Site do Curso</a></li>
+    </ul>
+    
+</body>
+</html> 
