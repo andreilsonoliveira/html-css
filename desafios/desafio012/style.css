@@ -1,8 +1,34 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Strait&family=Viaoda+Libre&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Strait&family=Stylish&family=Viaoda+Libre&display=swap');
+@import url(fonte/fontes.ttf);
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Sofia&family=Strait&family=Stylish&family=Viaoda+Libre&display=swap');
+
+@font-face {
+    font-family: fontes;
+    src: url('fonte/fontes.ttf') format('truetype'),
+    /* adicione outros formatos, como .ttf e .otf, se necessário */
+}
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Strait", sans-serif;
+    --fonte3: "Viaoda Libre", serif;
+    --fonte4: "Fredericka the Great", serif;
+    --fonte5: "Elegante", serif;
+    --fonte6: "Estreito", sans-serif;
+    --fonte7: "Viaoda Libre", serif;
+    --fonte8: "Fredericka, o Grande", serif;
+    --fonte9: "Sofia", cursiva;
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 
 html, body {
@@ -14,6 +40,8 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--fonte4);
+    font-size: 2.5vw;
 }
 
 header > h1{
@@ -40,6 +68,9 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte9);
+    font-size: 2.5vw;
+    
 }
 
 section.normal{
@@ -53,7 +84,8 @@ section.imagem{
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 9px;
     background-color: rgba(0, 0, 0, 0.753);
 }
 
@@ -62,4 +94,5 @@ footer{
     text-align: center;
     color: white;
     padding: 10px;
+    font-family: var(--fonte2);
 }
