@@ -13,6 +13,8 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+
         }
 
         td,
@@ -20,11 +22,35 @@
             border: 1px solid rgba(0, 0, 0, 0.473);
             padding: 5px;
         }
+        .num{
+            text-align: right;
+        }
 
         thead,
         tfoot {
             background-color: rgb(100, 100, 104);
             color: white;
+        }
+
+        thead > tr >th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(100, 100, 104);
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: rgb(129, 128, 128);
+        }
+
+        tbody > tr:nth-child(odd){ /* 2n-1 */
+            background-color: rgb(179, 255, 0);
+        }
+        
+        tbody > tr:nth-child(even){/* 2n */
+            background-color: rgb(6, 207, 243);
         }
     </style>
 </head>
@@ -34,10 +60,14 @@
 
 
     <table>
+
+        <caption>
+            Populção das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -155,11 +185,33 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.145</strong></td>
             </tr>
         </tfoot>
+
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corrupti blanditiis rem in accusamus porro accusantium impedit nisi sed est inventore quia, totam pariatur, doloribus distinctio sit harum iste consequatur.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nesciunt vel commodi reprehenderit! Explicabo eum ea sunt sit dolor natus quia iusto, reprehenderit quaerat repudiandae officia, dolorem nulla exercitationem magnam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corrupti blanditiis rem in accusamus porro accusantium impedit nisi sed est inventore quia, totam pariatur, doloribus distinctio sit harum iste consequatur.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nesciunt vel commodi reprehenderit! Explicabo eum ea sunt sit dolor natus quia iusto, reprehenderit quaerat repudiandae officia, dolorem nulla exercitationem magnam?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corrupti blanditiis rem in accusamus porro accusantium impedit nisi sed est inventore quia, totam pariatur, doloribus distinctio sit harum iste consequatur.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nesciunt vel commodi reprehenderit! Explicabo eum ea sunt sit dolor natus quia iusto, reprehenderit quaerat repudiandae officia, dolorem nulla exercitationem magnam?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corrupti blanditiis rem in accusamus porro accusantium impedit nisi sed est inventore quia, totam pariatur, doloribus distinctio sit harum iste consequatur.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nesciunt vel commodi reprehenderit! Explicabo eum ea sunt sit dolor natus quia iusto, reprehenderit quaerat repudiandae officia, dolorem nulla exercitationem magnam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corrupti blanditiis rem in accusamus porro accusantium impedit nisi sed est inventore quia, totam pariatur, doloribus distinctio sit harum iste consequatur.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nesciunt vel commodi reprehenderit! Explicabo eum ea sunt sit dolor natus quia iusto, reprehenderit quaerat repudiandae officia, dolorem nulla exercitationem magnam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corrupti blanditiis rem in accusamus porro accusantium impedit nisi sed est inventore quia, totam pariatur, doloribus distinctio sit harum iste consequatur.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nesciunt vel commodi reprehenderit! Explicabo eum ea sunt sit dolor natus quia iusto, reprehenderit quaerat repudiandae officia, dolorem nulla exercitationem magnam?</p>
 </body>
 
 </html>
