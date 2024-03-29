@@ -1,4 +1,27 @@
 @charset "UTF-8";
 
 
-/* estilos para empressora
+/* estilos para empressora*/
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+}
+
+article::after{
+    content: 'Esse Artigo foi impresso atraves do site porno';
+}
+
+article{
+    width: 100%;
+}
