@@ -2,3 +2,153 @@
 
 /*todas as demais midias*/
 
+/* typical device breakpoints
+pequenas telas: ate 600px
+celular: de 600px ate 768 px
+tablet: 768 px ate 992px
+Desktop: 992px ate 1200 px
+Tv: telas grandes / acima de 1200px
+*/
+
+@media print {
+    /* IMPRESSÃO*/
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+        /* desnecessario */
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#iphone {
+        display: block;
+        margin: auto;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#impressora {
+        display: block;
+        margin: auto;
+    }
+
+    img#desktop {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* TABLET*/
+
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+
+        img#iphone {
+            display: none;
+            margin: auto;
+        }
+
+        img#tablet {
+            display: block;
+            margin: auto;
+        }
+
+        img#impressora {
+            display: none;
+            margin: auto;
+        }
+
+        img#desktop {
+            display: none;
+            margin: auto;
+        }
+
+        img#tv {
+            display: none;
+            margin: auto;
+        }
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    /* DESKTOP*/
+
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+
+        img#iphone {
+            display: none;
+            margin: auto;
+        }
+
+        img#tablet {
+            display: none;
+        }
+
+        img#impressora {
+            display: none;
+        }
+
+        img#desktop {
+            display: block;
+            margin: auto;
+        }
+
+        img#tv {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    /* GRANDES TELAS*/
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#iphone {
+        display: none;
+        margin: auto;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#impressora {
+        display: none;
+    }
+
+    img#desktop {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+        margin: auto;
+    }
+
+}
